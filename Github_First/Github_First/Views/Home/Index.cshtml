@@ -3,3 +3,58 @@
 <h1>Home page</h1>
 
 <p>This is the homepage</p>
+
+
+<input type="text" name="Name" />
+
+<div id="box" style="height:100px; width:100px; border:1px solid black; ">
+
+</div>
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script>
+
+    $("input").keypress(function () {
+
+        $("input").css("background-color", "red");
+    });
+
+    $("input").keyup(function () {
+
+        $("input").css("background-color", "white");
+        console.log($(this).val());
+        $("#box").text($(this).val());
+    });
+
+    $("#box").mouseover(function () {
+        $(this).css("background-color", "yellow");
+    });
+
+
+    $("#box").mousedown(function () {
+        $(this).css("background-color", "yellow");
+    });
+
+
+    $("#box").mouseleave(function () {
+        $(this).css("background-color", "white");
+        $(this).animate({
+            width: "100px",
+            height: "100px",
+            transition: "10s"
+        })
+    });
+
+
+    $("#box").dblclick(function () {
+        $(this).animate({
+            width: "400px" ,
+            height: "200px"
+        })
+    });
+
+
+</script>
+
+
+
+
