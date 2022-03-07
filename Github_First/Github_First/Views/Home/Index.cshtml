@@ -5,6 +5,37 @@
 <p>This is the homepage</p>
 
 
+<div id="container" style="width: 500px; height: 500px; border: 1px solid black; ">
+
+<div id="par" style="width: 200px; height: 200px; border:1px solid black;">
+
+    <div id="c1" style="width: 100px; height: 100px; border:1px solid black;" >
+        <div id="11"></div>
+        <div id="12"></div>
+    </div>
+
+    <div id="c2">
+        <p>c2</p>
+    </div>
+
+    <div id="c3">
+        <p>c3</p>
+    </div>
+
+    <div id="c4">
+        <p>c4</p>
+    </div>
+
+    <div id="c5">
+        <p>c5</p>
+    </div>
+
+</div>
+
+    </div>
+
+
+
 <input type="text" name="Name" />
 
 <div id="box" style="height:100px; width:100px; border:1px solid black; ">
@@ -52,9 +83,25 @@
         })
     });
 
+    //console.log($("#c1").parent().html());
+
+    // $("#c1").parent().css("border", "3px solid red");
+
+    //$("#c1").closest("#container").css("background-color", "red");
+
+    //$("#par").children().css("border", "2px solid red");
+
+    //$("#par").find("#c1").css("border", "2px solid yellow");
+
+    //$("#c1").next().css("border", "2px solid yellow");
+
+    //$("#c1").nextAll().css("border", "2px solid yellow");
+
+    //$("#par").parentsUntil("body").css("border","1px solid yellow");  //only use element as arguments  in parentsUntil() use nextuntil for id
+
+    //$("#c1").nextUntil(" #c4 ").css("border", "2px solid black"); //nextAll() //prevUnitl()
+
+
 
 </script>
-
-
-
 
